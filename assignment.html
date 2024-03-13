@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <main>
+     <div class="border">
+          <div>
+            <h5>Your age</h5>
+            <form action="Age range">
+                <input id="age" type="number">
+            </form>
+            <button onclick="ClickHere()">Click Here</button>
+          </div>
+     </div>
+   </main>
+</body>
+</html>
+<script>
+ const age = 18;
+ function ClickHere() {
+    let yourAge = document.getElementById("age").value;
+    if (yourAge >= age){
+        alert("you're old enough")
+    } else{
+        alert("you're too young")
+    }
+ }
+</script>
